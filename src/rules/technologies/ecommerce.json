@@ -1,0 +1,137 @@
+{
+  "WooCommerce": {
+    "description": "WooCommerce is an eCommerce platform built on WordPress.",
+    "website": "https://woocommerce.com",
+    "icon": "WooCommerce.svg",
+    "cats": [1, 8],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:woocommerce:woocommerce:*:*:*:*:*:*:*:*",
+    "html": ["wp-content/plugins/woocommerce/", "woocommerce-product-gallery"],
+    "meta": { "generator": "WooCommerce" },
+    "css": ["woocommerce", "wc-"],
+    "implies": ["WordPress", "PHP"]
+  },
+
+  "Shopify": {
+    "description": "Shopify is a complete commerce platform.",
+    "website": "https://www.shopify.com",
+    "icon": "Shopify.svg",
+    "cats": [1, 8],
+    "priority": 1,
+    "html": ["Shopify\\.shopify\\.com", "cdn\\.shopify\\.com"],
+    "scriptSrc": ["cdn\\.shopify\\.com/"],
+    "meta": { "shopify-checkout": "" }
+  },
+
+  "Magento": {
+    "description": "Magento is an open-source eCommerce platform.",
+    "website": "https://magento.com",
+    "icon": "Magento.svg",
+    "cats": [1, 8],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:magento:magento:*:*:*:*:*:*:*:*",
+    "html": ["magento", "Magento"],
+    "meta": { "generator": "Magento" },
+    "scriptSrc": ["mage-messages", "mage-cache"],
+    "cookies": { "mage-cache-sessid": "", "mage-cache-storage": "", "mage-messages": "" },
+    "implies": ["PHP"]
+  },
+
+  "PrestaShop": {
+    "description": "PrestaShop is a free and open-source eCommerce platform.",
+    "website": "https://www.prestashop.com",
+    "cats": [1],
+    "priority": 3,
+    "html": ["prestashop", "PrestaShop"],
+    "meta": { "generator": "PrestaShop" },
+    "implies": ["PHP"]
+  },
+
+  "OpenCart": {
+    "description": "OpenCart is an open-source online eCommerce platform.",
+    "website": "https://opencart.com",
+    "cats": [1],
+    "priority": 3,
+    "meta": { "generator": "OpenCart" },
+    "implies": ["PHP"]
+  },
+
+  "ECSHOP": {
+    "description": "ECSHOP是一款开源电子商务系统。",
+    "website": "https://www.ecshop.com",
+    "cats": [1],
+    "priority": 2,
+    "meta": { "generator": "ECSHOP" },
+    "html": ["ecshop", "ECSHOP"],
+    "implies": ["PHP"]
+  },
+
+  "ShopXO": {
+    "description": "ShopXO是一款开源电商系统。",
+    "website": "https://www.shopxo.com",
+    "cats": [1],
+    "priority": 2,
+    "html": ["shopxo", "ShopXO"],
+    "meta": { "generator": "ShopXO" },
+    "implies": ["PHP"]
+  },
+
+  "SHOP++": {
+    "description": "SHOP++是一款开源商城系统。",
+    "website": "https://www.shopxx.net",
+    "cats": [1],
+    "priority": 3,
+    "meta": { "generator": "SHOP++" },
+    "implies": ["PHP"]
+  },
+
+  "osCommerce": {
+    "description": "osCommerce is an online shop e-commerce solution.",
+    "website": "https://www.oscommerce.com",
+    "cats": [1],
+    "priority": 3,
+    "implies": ["PHP"]
+  },
+
+  "Zen Cart": {
+    "description": "Zen Cart is an open-source eCommerce platform.",
+    "website": "https://www.zen-cart.com",
+    "cats": [1],
+    "priority": 3,
+    "implies": ["PHP"]
+  },
+
+  "BigCommerce": {
+    "description": "BigCommerce is an eCommerce platform for online merchants.",
+    "website": "https://www.bigcommerce.com",
+    "cats": [1]
+  },
+
+  "Squarespace": {
+    "description": "Squarespace is a website building and hosting service.",
+    "website": "https://www.squarespace.com",
+    "cats": [1],
+    "meta": { "generator": "Squarespace" }
+  },
+
+  "Wix": {
+    "description": "Wix is a cloud-based web development platform.",
+    "website": "https://www.wix.com",
+    "cats": [1],
+    "html": ["wix-warmup-data", "Wix"]
+  },
+
+  "Ecwid": {
+    "description": "Ecwid is a cloud-based eCommerce platform.",
+    "website": "https://www.ecwid.com",
+    "cats": [1],
+    "scriptSrc": ["ecwid\\.com/"]
+  },
+
+  "MallBuilder": {
+    "description": "MallBuilder 是基于 ThinkPHP 的在线商城系统。",
+    "cats": [1],
+    "priority": 3,
+    "implies": ["ThinkPHP"]
+  }
+}

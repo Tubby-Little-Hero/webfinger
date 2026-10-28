@@ -1,0 +1,205 @@
+{
+  "Google Analytics": {
+    "description": "Google Analytics is a web analytics service offered by Google.",
+    "website": "https://analytics.google.com",
+    "icon": "GoogleAnalytics.svg",
+    "cats": [6],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:google:analytics:*:*:*:*:*:*:*:*",
+    "scriptSrc": [
+      "google-analytics\\.com/analytics\\.js",
+      "googletagmanager\\.com/gtag/js",
+      "google-analytics\\.com/ga\\.js",
+      "tagmanager\\.js"
+    ],
+    "js": { "ga": "", "gaData": "", "google_tag_manager": "", "_gaq": "" },
+    "cookies": { "_ga": "", "_gid": "", "_gat": "", "_ga_": "" }
+  },
+
+  "Google Tag Manager": {
+    "description": "Google Tag Manager is a tag management system.",
+    "website": "https://tagmanager.google.com",
+    "cats": [6],
+    "priority": 1,
+    "scriptSrc": ["googletagmanager\\.com/gtag/js", "gtag/js"],
+    "implies": ["Google Analytics"]
+  },
+
+  "百度统计 (Baidu Tongji)": {
+    "description": "百度统计是百度推出的网站流量分析工具。",
+    "website": "https://tongji.baidu.com",
+    "icon": "BaiduTongji.svg",
+    "cats": [6],
+    "priority": 1,
+    "scriptSrc": ["hm\\.baidu\\.com/hm\\.js(?:\\?[^'\"]*)?"],
+    "js": { "_hmt": "", "_bdhmProtocol": "" },
+    "cookies": { "HMACCOUNT": "", "HMACCOUNT_BFESS": "" }
+  },
+
+  "CNZZ / 友盟+": {
+    "description": "友盟+(CNZZ)是全球领先的第三方全域数据服务商。",
+    "website": "https://www.umeng.com",
+    "cats": [6],
+    "priority": 2,
+    "scriptSrc": [
+      "s95\\.cnzz\\.com/",
+      "s4\\.cnzz\\.com/",
+      "s9\\.cnzz\\.com/",
+      "cnzz\\.com/"
+    ],
+    "js": { "_czc": "", "cnzz_protocol": "" }
+  },
+
+  "51LA": {
+    "description": "51LA网站流量统计分析工具。",
+    "website": "https://www.51.la",
+    "cats": [6],
+    "scriptSrc": ["51\\.la/", "js\\.users\\.51\\.la", "js\\.51\\.la"]
+  },
+
+  "腾讯移动分析 (MTA)": {
+    "description": "腾讯移动分析(MTA)是一款专业的移动应用数据统计分析工具。",
+    "website": "https://mta.qq.com",
+    "cats": [6],
+    "priority": 2,
+    "scriptSrc": ["pingjs\\.qq\\.com/", "mta\\.qq\\.com/"],
+    "js": { "MtaH5": "" }
+  },
+
+  "Matomo (Piwik)": {
+    "description": "Matomo (formerly Piwik) is an open-source web analytics platform.",
+    "website": "https://matomo.org",
+    "icon": "Matomo.svg",
+    "cats": [6],
+    "priority": 2,
+    "scriptSrc": ["matomo\\.js", "piwik\\.js", "matomo\\.php"],
+    "js": { "Piwik": "", "Matomo": "" },
+    "cookies": { "_pk_id": "", "_pk_ses": "", "piwik_ignore": "" }
+  },
+
+  "Umami": {
+    "description": "Umami is an open-source, privacy-focused web analytics tool.",
+    "website": "https://umami.is",
+    "icon": "Umami.svg",
+    "cats": [6],
+    "priority": 2,
+    "scriptSrc": ["umami\\.js", "cloud\\.umami\\.is/script"],
+    "js": { "umami": "" }
+  },
+
+  "Plausible": {
+    "description": "Plausible is a privacy-friendly analytics tool.",
+    "website": "https://plausible.io",
+    "icon": "Plausible.svg",
+    "cats": [6],
+    "priority": 2,
+    "scriptSrc": ["plausible\\.io/js/", "plausible\\.js", "plausible\\.in/js/"]
+  },
+
+  "Hotjar": {
+    "description": "Hotjar is a behavior analytics and user feedback service.",
+    "website": "https://www.hotjar.com",
+    "cats": [6],
+    "priority": 2,
+    "scriptSrc": ["hotjar\\.com/", "static\\.hotjar\\.com/"],
+    "js": { "hj": "" },
+    "cookies": { "_hj": "" }
+  },
+
+  "GrowingIO": {
+    "description": "GrowingIO是一站式增长数据分析平台。",
+    "website": "https://www.growingio.com",
+    "cats": [6],
+    "priority": 2,
+    "scriptSrc": ["growingio\\.com/", "cdns\\.growingio\\.com/"],
+    "js": { "gio": "", "growingio": "" }
+  },
+
+  "神策分析 (Sensors Analytics)": {
+    "description": "神策分析是一款用户行为分析工具。",
+    "website": "https://www.sensorsdata.cn",
+    "cats": [6],
+    "priority": 2,
+    "scriptSrc": ["sensorsdata\\.cn/", "sensorsdata\\.com/"],
+    "js": { "sensors": "", "Sensors": "", "sa": "" }
+  },
+
+  "友盟+ (Umeng)": {
+    "description": "友盟+是友盟推出的移动统计分析工具。",
+    "website": "https://www.umeng.com",
+    "cats": [6],
+    "scriptSrc": ["open\\.umeng\\.com/", "log\\.umeng\\.com/"]
+  },
+
+  "Fathom": {
+    "description": "Fathom is a privacy-focused website analytics tool.",
+    "website": "https://usefathom.com",
+    "cats": [6],
+    "priority": 2,
+    "scriptSrc": ["cdn\\.usefathom\\.com/"]
+  },
+
+  "Clicky": {
+    "description": "Clicky is a web analytics service.",
+    "website": "https://clicky.com",
+    "cats": [6],
+    "scriptSrc": ["clicky\\.com/", "stat\\.clicky\\.com/"]
+  },
+
+  "Mixpanel": {
+    "description": "Mixpanel is an analytics platform.",
+    "website": "https://mixpanel.com",
+    "cats": [6],
+    "js": { "mixpanel": "" },
+    "scriptSrc": ["mixpanel\\.com/"]
+  },
+
+  "Amplitude": {
+    "description": "Amplitude is a product analytics platform.",
+    "website": "https://amplitude.com",
+    "cats": [6],
+    "js": { "amplitude": "" }
+  },
+
+  "Kissmetrics": {
+    "description": "KISSmetrics is a customer analytics platform.",
+    "website": "https://www.kissmetrics.com",
+    "cats": [6],
+    "scriptSrc": ["kissmetrics\\.com/"]
+  },
+
+  "Crazy Egg": {
+    "description": "Crazy Egg is a website optimization tool.",
+    "website": "https://www.crazyegg.com",
+    "cats": [6],
+    "scriptSrc": ["crazyegg\\.com/"]
+  },
+
+  "Lucky Orange": {
+    "description": "Lucky Orange is a website analytics tool.",
+    "website": "https://www.luckyorange.com",
+    "cats": [6],
+    "scriptSrc": ["luckyorange\\.com/"]
+  },
+
+  "Microsoft Clarity": {
+    "description": "Clarity is a free, privacy-first product analytics tool.",
+    "website": "https://clarity.microsoft.com",
+    "cats": [6],
+    "priority": 2,
+    "scriptSrc": ["clarity\\.ms/"],
+    "js": { "clarity": "" }
+  },
+
+  "Baiduspider": {
+    "description": "百度蜘蛛抓取分析。",
+    "cats": [6],
+    "headers": { "User-Agent": "Baiduspider" }
+  },
+
+  "Googlebot": {
+    "description": "Googlebot 抓取分析。",
+    "cats": [6],
+    "headers": { "User-Agent": "Googlebot" }
+  }
+}

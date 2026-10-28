@@ -1,0 +1,122 @@
+{
+  "MySQL": {
+    "description": "MySQL is an open-source relational database management system.",
+    "website": "https://www.mysql.com",
+    "icon": "MySQL.svg",
+    "cats": [9],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*",
+    "implies": ["PHP"]
+  },
+
+  "PostgreSQL": {
+    "description": "PostgreSQL is a powerful open-source relational database.",
+    "website": "https://www.postgresql.org",
+    "icon": "PostgreSQL.svg",
+    "cats": [9],
+    "cpe": "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*"
+  },
+
+  "Redis": {
+    "description": "Redis is an in-memory data structure store.",
+    "website": "https://redis.io",
+    "icon": "Redis.svg",
+    "cats": [9, 12],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:redis:redis:*:*:*:*:*:*:*:*",
+    "html": ["redis", "Redis"]
+  },
+
+  "MongoDB": {
+    "description": "MongoDB is a document-oriented NoSQL database.",
+    "website": "https://www.mongodb.com",
+    "icon": "MongoDB.svg",
+    "cats": [9],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:mongodb:mongodb:*:*:*:*:*:*:*:*",
+    "html": ["mongodb", "MongoDB"]
+  },
+
+  "SQLite": {
+    "description": "SQLite is a C-language library that implements a small SQL database engine.",
+    "website": "https://www.sqlite.org",
+    "cats": [9],
+    "priority": 3
+  },
+
+  "Elasticsearch": {
+    "description": "Elasticsearch is a distributed, RESTful search and analytics engine.",
+    "website": "https://www.elastic.co/elasticsearch",
+    "icon": "Elasticsearch.svg",
+    "cats": [9],
+    "priority": 2,
+    "headers": { "X-Powered-By": "Elasticsearch" },
+    "url": "/elasticsearch"
+  },
+
+  "Oracle": {
+    "description": "Oracle Database is an object-relational database management system.",
+    "website": "https://www.oracle.com/database/",
+    "cats": [9],
+    "cpe": "cpe:2.3:a:oracle:oracle_database:*:*:*:*:*:*:*:*"
+  },
+
+  "Microsoft SQL Server": {
+    "description": "Microsoft SQL Server is a relational database management system.",
+    "website": "https://www.microsoft.com/sql-server",
+    "cats": [9],
+    "cpe": "cpe:2.3:a:microsoft:sql_server:*:*:*:*:*:*:*:*",
+    "implies": ["ASP.NET"]
+  },
+
+  "MariaDB": {
+    "description": "MariaDB is a community-developed fork of MySQL.",
+    "website": "https://mariadb.com",
+    "icon": "MariaDB.svg",
+    "cats": [9],
+    "priority": 2,
+    "implies": ["PHP"]
+  },
+
+  "Memcached": {
+    "description": "Memcached is a general-purpose distributed memory caching system.",
+    "website": "https://memcached.org",
+    "cats": [9, 12],
+    "priority": 3
+  },
+
+  "RabbitMQ": {
+    "description": "RabbitMQ is an open-source message broker.",
+    "website": "https://www.rabbitmq.com",
+    "cats": [9],
+    "priority": 3
+  },
+
+  "Kafka": {
+    "description": "Kafka is an open-source distributed event streaming platform.",
+    "website": "https://kafka.apache.org",
+    "cats": [9],
+    "priority": 3
+  },
+
+  "NATS": {
+    "description": "NATS is an open-source messaging system.",
+    "website": "https://nats.io",
+    "cats": [9],
+    "priority": 3
+  },
+
+  "Cassandra": {
+    "description": "Cassandra is a free and open-source distributed wide column store.",
+    "website": "https://cassandra.apache.org",
+    "cats": [9],
+    "priority": 3
+  },
+
+  "InfluxDB": {
+    "description": "InfluxDB is a time series database.",
+    "website": "https://www.influxdata.com",
+    "cats": [9],
+    "priority": 3
+  }
+}

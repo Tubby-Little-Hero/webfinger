@@ -1,0 +1,155 @@
+{
+  "WordPress": {
+    "description": "WordPress is a free and open-source content management system.",
+    "website": "https://wordpress.org",
+    "icon": "WordPress.svg",
+    "cats": [1],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:wordpress:wordpress:*:*:*:*:*:*:*:*",
+    "headers": { "X-Powered-By": "WordPress" },
+    "html": [
+      "<link[^>]+wp-content/themes/",
+      "<link[^>]+wp-content/plugins/",
+      "<link[^>]+wp-includes/"
+    ],
+    "meta": { "generator": "WordPress\\s*([\\d.]+)?\\;version:\\1" },
+    "scriptSrc": [
+      "wp-includes/js/wp-embed\\.min\\.js",
+      "wp-content/plugins/",
+      "wp-content/themes/"
+    ],
+    "css": ["\\.wp-block-", "\\.wp-emoji"],
+    "cookies": { "wordpress_logged_in": "" },
+    "js": { "wp": "", "wp.apiFetch": "" },
+    "implies": ["PHP", "MySQL"]
+  },
+
+  "Drupal": {
+    "description": "Drupal is a free and open-source content-management framework.",
+    "website": "https://www.drupal.org",
+    "icon": "Drupal.svg",
+    "cats": [1],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:drupal:drupal:*:*:*:*:*:*:*:*",
+    "headers": { "X-Generator": "Drupal\\s*([\\d.]+)?\\;version:\\1" },
+    "html": ["<link[^>]+sites/default/", "<link[^>]+sites/all/"],
+    "meta": { "generator": "Drupal\\s*([\\d.]+)?\\;version:\\1" },
+    "scriptSrc": ["/sites/default/", "/sites/all/modules/", "misc/drupal\\.js"],
+    "js": { "Drupal": "", "drupalSettings": "" },
+    "cookies": { "SESS": "" },
+    "implies": ["PHP"]
+  },
+
+  "Joomla": {
+    "description": "Joomla is a free and open-source content management system.",
+    "website": "https://www.joomla.org",
+    "icon": "Joomla.svg",
+    "cats": [1],
+    "priority": 3,
+    "cpe": "cpe:2.3:a:joomla:joomla\\!:*:*:*:*:*:*:*:*",
+    "html": ["<link[^>]+/templates/", "<link[^>]+/media/jui/"],
+    "meta": { "generator": "Joomla!\\s*([\\d.]+)?\\;version:\\1" },
+    "scriptSrc": ["/media/jui/js/", "/media/system/js/"],
+    "cookies": { "joomla_user_state": "" },
+    "headers": { "X-Content-Encoded-By": "Joomla" },
+    "implies": ["PHP"]
+  },
+
+  "织梦CMS (DedeCMS)": {
+    "description": "织梦内容管理系统(DedeCMS)是国内最流行的PHP开源CMS之一。",
+    "website": "https://www.dedecms.com",
+    "icon": "DedeCMS.svg",
+    "cats": [1],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:dedecms:dedecms:*:*:*:*:*:*:*:*",
+    "html": [
+      "<link[^>]+/templets/default/",
+      "<link[^>]+/templets/style/"
+    ],
+    "meta": { "generator": "DedeCMS" },
+    "scriptSrc": ["/include/dedeajax2\\.js", "/images/rss\\.gif"],
+    "url": "/dede/",
+    "cookies": { "DedeUserID": "" },
+    "js": { "DedeXHTTP": "", "DedeXHTTP2": "" },
+    "text": "Powered by DedeCMS",
+    "implies": ["PHP", "MySQL"]
+  },
+
+  "帝国CMS (EmpireCMS)": {
+    "description": "帝国网站管理系统(EmpireCMS)是国内知名的PHP开源CMS。",
+    "website": "https://www.phome.net",
+    "icon": "EmpireCMS.svg",
+    "cats": [1],
+    "priority": 2,
+    "html": ["<link[^>]+/skin/default/"],
+    "meta": { "generator": "Empire CMS" },
+    "scriptSrc": ["/e/data/js/", "/e/public/"],
+    "url": "/e/admin/",
+    "cookies": { "ecms": "" },
+    "text": "Powered by EmpireCMS",
+    "implies": ["PHP"]
+  },
+
+  "PHPCMS": {
+    "description": "PHPCMS是一款基于PHP的内容管理系统。",
+    "website": "https://www.phpcms.cn",
+    "cats": [1],
+    "priority": 3,
+    "html": ["<link[^>]+/phpcms/templates/"],
+    "meta": { "generator": "PHPCMS" },
+    "scriptSrc": ["/statics/js/", "/phpcms/" ],
+    "url": "/phpcms/",
+    "implies": ["PHP"]
+  },
+
+  "Discuz!": {
+    "description": "Discuz! 是一套通用的社区论坛软件系统。",
+    "website": "https://www.discuz.vip",
+    "icon": "Discuz.svg",
+    "cats": [1],
+    "priority": 2,
+    "html": [
+      "<link[^>]+template/default/",
+      "<link[^>]+source/plugin/"
+    ],
+    "meta": { "generator": "Discuz!" },
+    "scriptSrc": ["static/js/common\\.js", "source/plugin/"],
+    "cookies": { "discuz_*": "" },
+    "js": { "discuz_uid": "" },
+    "text": "Powered by Discuz!",
+    "implies": ["PHP", "MySQL"]
+  },
+
+  "Z-BlogPHP": {
+    "description": "Z-BlogPHP是一款PHP博客系统。",
+    "website": "https://www.zblogcn.com",
+    "icon": "Z-Blog.svg",
+    "cats": [1],
+    "meta": { "generator": "Z-BlogPHP" },
+    "scriptSrc": ["zb_system/script/", "zb_users/"],
+    "url": "/zb_system/",
+    "cookies": { "ZB_*": "" },
+    "implies": ["PHP"]
+  },
+
+  "Typecho": {
+    "description": "Typecho是一个轻量级PHP博客程序。",
+    "website": "https://typecho.org",
+    "icon": "Typecho.svg",
+    "cats": [1],
+    "meta": { "generator": "Typecho" },
+    "scriptSrc": ["/usr/themes/", "/usr/plugins/"],
+    "url": "/usr/themes/",
+    "implies": ["PHP"]
+  },
+
+  "MetInfo": {
+    "description": "MetInfo(米拓)是一款企业级CMS系统。",
+    "website": "https://www.metinfo.cn",
+    "cats": [1],
+    "meta": { "generator": "MetInfo" },
+    "html": ["<link[^>]+/templates/met"],
+    "url": "/app/system/",
+    "implies": ["PHP"]
+  }
+}

@@ -1,0 +1,469 @@
+{
+  "jQuery": {
+    "description": "jQuery is a fast, small, and feature-rich JavaScript library.",
+    "website": "https://jquery.com",
+    "icon": "jQuery.svg",
+    "cats": [7],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:jquery:jquery:*:*:*:*:*:*:*:*",
+    "js": { "jQuery": "", "jQuery.fn.jquery": "([\\d.]+)\\;version:\\1", "$": "" },
+    "scriptSrc": ["jquery(?:-([\\d.]+))?(?:\\.min)?\\.js\\;version:\\1",
+      "jquery/([\\d.]+)/jquery(?:\\.min)?\\.js\\;version:\\1"
+    ]
+  },
+
+  "Lodash": {
+    "description": "Lodash is a modern JavaScript utility library.",
+    "website": "https://lodash.com",
+    "icon": "Lodash.svg",
+    "cats": [7],
+    "cpe": "cpe:2.3:a:lodash:lodash:*:*:*:*:*:*:*:*",
+    "js": { "_": "", "lodash": "" },
+    "scriptSrc": ["lodash(?:\\.min)?\\.js", "lodash\\.core(?:\\.min)?\\.js"]
+  },
+
+  "Moment.js": {
+    "description": "Moment.js is a JavaScript date library.",
+    "website": "https://momentjs.com",
+    "icon": "Moment.svg",
+    "cats": [7],
+    "js": { "moment": "" },
+    "scriptSrc": ["moment(?:\\.min)?\\.js", "moment-with-locales(?:\\.min)?\\.js"]
+  },
+
+  "Swiper": {
+    "description": "Swiper is a modern mobile touch slider.",
+    "website": "https://swiperjs.com",
+    "icon": "Swiper.svg",
+    "cats": [7],
+    "js": { "Swiper": "" },
+    "scriptSrc": ["swiper(?:\\.min)?\\.js", "swiper-bundle(?:\\.min)?\\.js"],
+    "css": ["\\.swiper-"]
+  },
+
+  "Axios": {
+    "description": "Axios is a promise-based HTTP client.",
+    "website": "https://axios-http.com",
+    "icon": "Axios.svg",
+    "cats": [7],
+    "js": { "axios": "" }
+  },
+
+  "Alpine.js": {
+    "description": "Alpine.js is a rugged, minimal framework for composing JavaScript behavior in markup.",
+    "website": "https://alpinejs.dev",
+    "cats": [7],
+    "js": { "Alpine": "", "AlpineData": "" },
+    "html": ["x-data=", "x-show=", "x-text=", "x-bind="]
+  },
+
+  "Day.js": {
+    "description": "Day.js is a minimalist JavaScript library for dates.",
+    "website": "https://day.js.org",
+    "cats": [7],
+    "js": { "dayjs": "" },
+    "scriptSrc": ["dayjs(?:\\.min)?\\.js"]
+  },
+
+  "Three.js": {
+    "description": "Three.js is a 3D library for JavaScript.",
+    "website": "https://threejs.org",
+    "icon": "Three.js.svg",
+    "cats": [7],
+    "cpe": "cpe:2.3:a:three.js:three.js:*:*:*:*:*:*:*:*",
+    "js": { "THREE": "" },
+    "scriptSrc": ["three(?:\\.min)?\\.js", "three\\.module\\.js"]
+  },
+
+  "ECharts": {
+    "description": "ECharts is a powerful charting and visualization library by Baidu.",
+    "website": "https://echarts.apache.org",
+    "icon": "ECharts.svg",
+    "cats": [7],
+    "js": { "echarts": "" },
+    "scriptSrc": ["echarts(?:\\.min)?\\.js"]
+  },
+
+  "Ant Design": {
+    "description": "Ant Design is a UI design language and React UI library.",
+    "website": "https://ant.design",
+    "icon": "AntDesign.svg",
+    "cats": [7, 10],
+    "js": { "antd": "" },
+    "css": ["\\.ant-"],
+    "html": ["class=\"ant-"]
+  },
+
+  "Element UI / Plus": {
+    "description": "Element UI/Plus is a Vue.js component library.",
+    "website": "https://element-plus.org",
+    "icon": "ElementUI.svg",
+    "cats": [7, 10],
+    "css": ["\\.el-"],
+    "html": ["class=\"el-"],
+    "implies": ["Vue.js"]
+  },
+
+  "Socket.io": {
+    "description": "Socket.IO enables real-time bidirectional event-based communication.",
+    "website": "https://socket.io",
+    "icon": "Socket.io.svg",
+    "cats": [7],
+    "js": { "io": "" },
+    "scriptSrc": ["socket\\.io(?:\\.min)?\\.js"]
+  },
+
+  "Webpack": {
+    "description": "Webpack is a static module bundler for JavaScript.",
+    "website": "https://webpack.js.org",
+    "icon": "Webpack.svg",
+    "cats": [7, 13],
+    "js": { "webpackJsonp": "", "__webpack_public_path__": "", "__webpack_require__": "" }
+  },
+
+  "Vite": {
+    "description": "Vite is a build tool that aims to provide a faster and leaner development experience.",
+    "website": "https://vitejs.dev",
+    "cats": [7, 13],
+    "html": ["__vite_ping", "<script type=\"module\" crossorigin"],
+    "headers": { "x-powered-by": "Vite" }
+  },
+
+  "Rollup": {
+    "description": "Rollup is a module bundler for JavaScript.",
+    "website": "https://rollupjs.org",
+    "cats": [7, 13],
+    "js": { "__ROLLUP_PUBLIC_PATH__": "" }
+  },
+
+  "React Router": {
+    "description": "React Router is a lightweight, fully-featured client and server-side routing library for React.",
+    "website": "https://reactrouter.com",
+    "cats": [7],
+    "implies": ["React"]
+  },
+
+  "Redux": {
+    "description": "Redux is a predictable state container for JavaScript apps.",
+    "website": "https://redux.js.org",
+    "cats": [7],
+    "js": { "__REDUX_DEVTOOLS_EXTENSION__": "", "__redux_store__": "" }
+  },
+
+  "Pinia": {
+    "description": "Pinia is a stores library for Vue.",
+    "website": "https://pinia.vuejs.org",
+    "cats": [7],
+    "implies": ["Vue.js"]
+  },
+
+  "D3.js": {
+    "description": "D3.js is a JavaScript library for producing dynamic, interactive data visualizations.",
+    "website": "https://d3js.org",
+    "icon": "D3.svg",
+    "cats": [7],
+    "js": { "d3": "" },
+    "scriptSrc": ["d3(?:\\.min)?\\.js"]
+  },
+
+  "Chart.js": {
+    "description": "Chart.js is a popular open-source JavaScript library for data visualization.",
+    "website": "https://www.chartjs.org",
+    "icon": "Chart.js.svg",
+    "cats": [7],
+    "js": { "Chart": "" },
+    "scriptSrc": ["chart(?:\\.min)?\\.js"]
+  },
+
+  "Highcharts": {
+    "description": "Highcharts is a JavaScript charting library.",
+    "website": "https://www.highcharts.com",
+    "cats": [7],
+    "js": { "Highcharts": "" },
+    "scriptSrc": ["highcharts(?:\\.min)?\\.js"]
+  },
+
+  "Mapbox GL JS": {
+    "description": "Mapbox GL JS is a JavaScript library that uses WebGL to render interactive maps.",
+    "website": "https://docs.mapbox.com/mapbox-gl-js/",
+    "cats": [7],
+    "js": { "mapboxgl": "" },
+    "scriptSrc": ["mapbox-gl(?:\\.min)?\\.js"],
+    "css": ["mapboxgl-"]
+  },
+
+  "Leaflet": {
+    "description": "Leaflet is an open-source JavaScript library for interactive maps.",
+    "website": "https://leafletjs.com",
+    "cats": [7],
+    "js": { "L": "", "leaflet": "" },
+    "scriptSrc": ["leaflet(?:\\.min)?\\.js"],
+    "css": ["leaflet-"]
+  },
+
+  "Fancybox": {
+    "description": "Fancybox is a JavaScript library for displaying images, videos, and content.",
+    "website": "https://fancyapps.com/fancybox",
+    "cats": [7],
+    "js": { "Fancybox": "" },
+    "css": ["fancybox-"]
+  },
+
+  "AOS": {
+    "description": "AOS is a JavaScript library that animates elements as you scroll.",
+    "website": "https://michalsnik.github.io/aos/",
+    "cats": [7],
+    "js": { "AOS": "" }
+  },
+
+  "GSAP": {
+    "description": "GSAP is a JavaScript animation library.",
+    "website": "https://gsap.com",
+    "cats": [7],
+    "js": { "gsap": "" }
+  },
+
+  "Tween.js": {
+    "description": "Tween.js is a tweening engine for JavaScript.",
+    "website": "https://github.com/tweenjs/tween.js",
+    "cats": [7],
+    "js": { "TWEEN": "" }
+  },
+
+  "Masonry": {
+    "description": "Masonry is a JavaScript grid layout library.",
+    "website": "https://masonry.desandro.com",
+    "cats": [7],
+    "js": { "Masonry": "" },
+    "scriptSrc": ["masonry(?:\\.pkgd)?(?:\\.min)?\\.js"]
+  },
+
+  "Isotope": {
+    "description": "Isotope is an exquisite jQuery plugin for magical layouts.",
+    "website": "https://isotope.metafizzy.co",
+    "cats": [7],
+    "js": { "Isotope": "" },
+    "implies": ["jQuery"]
+  },
+
+  "SweetAlert": {
+    "description": "SweetAlert is a JavaScript library for making responsive, beautiful alert dialogs.",
+    "website": "https://sweetalert.js.org",
+    "cats": [7],
+    "js": { "swal": "", "SweetAlert": "" }
+  },
+
+  "Toastify": {
+    "description": "React Toastify is a notification library for React.",
+    "website": "https://fkhadra.github.io/react-toastify/",
+    "cats": [7],
+    "js": { "toast": "" },
+    "implies": ["React"]
+  },
+
+  "Clipboard.js": {
+    "description": "Clipboard.js is a lightweight library that copies text to clipboard.",
+    "website": "https://clipboardjs.com",
+    "cats": [7],
+    "js": { "ClipboardJS": "", "Clipboard": "" }
+  },
+
+  "LazyLoad": {
+    "description": "LazyLoad is a fast, lightweight JavaScript library for lazy loading images.",
+    "website": "https://github.com/tuupola/lazyload",
+    "cats": [7],
+    "js": { "LazyLoad": "" },
+    "scriptSrc": ["lazyload(?:\\.min)?\\.js"]
+  },
+
+  "Flickity": {
+    "description": "Flickity is a JavaScript carousel library.",
+    "website": "https://flickity.metafizzy.co",
+    "cats": [7],
+    "js": { "Flickity": "" },
+    "css": ["flickity-"]
+  },
+
+  "ApexCharts": {
+    "description": "ApexCharts is a modern charting library.",
+    "website": "https://apexcharts.com",
+    "cats": [7],
+    "js": { "ApexCharts": "" }
+  },
+
+  "Quill": {
+    "description": "Quill is a modern WYSIWYG editor.",
+    "website": "https://quilljs.com",
+    "cats": [7],
+    "js": { "Quill": "", "quill": "" },
+    "css": ["ql-"]
+  },
+
+  "TinyMCE": {
+    "description": "TinyMCE is a rich text editor.",
+    "website": "https://www.tiny.cloud",
+    "cats": [7],
+    "js": { "tinymce": "" },
+    "scriptSrc": ["tinymce(?:\\.min)?\\.js"]
+  },
+
+  "CKEditor": {
+    "description": "CKEditor is a WYSIWYG rich text editor.",
+    "website": "https://ckeditor.com",
+    "cats": [7],
+    "js": { "CKEDITOR": "", "CKEditor": "" },
+    "css": ["cke_"]
+  },
+
+  "Monaco Editor": {
+    "description": "Monaco Editor is the code editor that powers VS Code.",
+    "website": "https://microsoft.github.io/monaco-editor/",
+    "cats": [7],
+    "js": { "monaco": "" },
+    "implies": ["Microsoft"]
+  },
+
+  "Codemirror": {
+    "description": "CodeMirror is a versatile text editor implemented in JavaScript.",
+    "website": "https://codemirror.net",
+    "cats": [7],
+    "js": { "CodeMirror": "" }
+  },
+
+  "PDF.js": {
+    "description": "PDF.js is a Portable Document Format file viewer built with HTML5.",
+    "website": "https://mozilla.github.io/pdf.js/",
+    "cats": [7],
+    "js": { "pdfjsLib": "", "PDFViewerApplication": "" },
+    "scriptSrc": ["pdfjs(?:\\.min)?\\.js"]
+  },
+
+  "Three.js OrbitControls": {
+    "description": "OrbitControls is a three.js addon for camera controls.",
+    "cats": [7],
+    "js": { "THREE.OrbitControls": "" },
+    "implies": ["Three.js"]
+  },
+
+  "Amplify": {
+    "description": "AWS Amplify is a framework for building cloud-enabled applications.",
+    "website": "https://aws.amazon.com/amplify/",
+    "cats": [7],
+    "js": { "Amplify": "" }
+  },
+
+  "Stripe": {
+    "description": "Stripe is a payment infrastructure for the internet.",
+    "website": "https://stripe.com",
+    "cats": [7],
+    "js": { "Stripe": "" },
+    "scriptSrc": ["stripe\\.com/v3/"]
+  },
+
+  "PayPal": {
+    "description": "PayPal is a payment processing company.",
+    "website": "https://www.paypal.com",
+    "cats": [7],
+    "scriptSrc": ["paypal\\.com/"],
+    "html": ["paypal\\.com/"]
+  },
+
+  "Twilio": {
+    "description": "Twilio is a cloud communications platform.",
+    "website": "https://www.twilio.com",
+    "cats": [7],
+    "js": { "Twilio": "", "twilio": "" }
+  },
+
+  "Firebase": {
+    "description": "Firebase is a platform for building mobile and web applications.",
+    "website": "https://firebase.google.com",
+    "cats": [7],
+    "js": { "firebase": "" },
+    "scriptSrc": ["firebase(?:-compat)?(?:\\.min)?\\.js"],
+    "headers": { "x-firebase-web-api": "" }
+  },
+
+  "Supabase": {
+    "description": "Supabase is an open source Firebase alternative.",
+    "website": "https://supabase.com",
+    "cats": [7],
+    "js": { "supabase": "", "createClient": "" }
+  },
+
+  "GraphQL": {
+    "description": "GraphQL is a query language for APIs.",
+    "website": "https://graphql.org",
+    "cats": [7],
+    "headers": { "content-type": "application/graphql", "x-graphql": "" },
+    "url": "/graphql"
+  },
+
+  "Apollo": {
+    "description": "Apollo is a GraphQL platform.",
+    "website": "https://www.apollographql.com",
+    "cats": [7],
+    "js": { "Apollo": "", "ApolloClient": "" },
+    "implies": ["GraphQL"]
+  },
+
+  "TanStack Query": {
+    "description": "TanStack Query is a powerful data fetching and state management library.",
+    "website": "https://tanstack.com/query",
+    "cats": [7],
+    "js": { "tanstack": "" },
+    "implies": ["React"]
+  },
+
+  "Zustand": {
+    "description": "Zustand is a minimalistic state management library for React.",
+    "website": "https://github.com/pmndrs/zustand",
+    "cats": [7],
+    "implies": ["React"]
+  },
+
+  "Jest": {
+    "description": "Jest is a delightful JavaScript testing framework.",
+    "website": "https://jestjs.io",
+    "cats": [7, 13]
+  },
+
+  "Playwright": {
+    "description": "Playwright is a framework for web testing and automation.",
+    "website": "https://playwright.dev",
+    "cats": [7, 13]
+  },
+
+  "Cypress": {
+    "description": "Cypress is an end-to-end testing framework.",
+    "website": "https://www.cypress.io",
+    "cats": [7, 13]
+  },
+
+  "Babel": {
+    "description": "Babel is a JavaScript compiler.",
+    "website": "https://babeljs.io",
+    "cats": [7, 13],
+    "js": { "babel": "", "Babel": "" }
+  },
+
+  "esbuild": {
+    "description": "esbuild is an extremely fast JavaScript bundler and minifier.",
+    "website": "https://esbuild.github.io",
+    "cats": [7, 13]
+  },
+
+  "Parcel": {
+    "description": "Parcel is a web application bundler with zero configuration.",
+    "website": "https://parceljs.org",
+    "cats": [7, 13]
+  },
+
+  "Nuxt": {
+    "description": "Nuxt is an intuitive Vue framework.",
+    "website": "https://nuxt.com",
+    "cats": [7],
+    "js": { "__NUXT__": "", "$nuxt": "" },
+    "implies": ["Vue.js"]
+  }
+}

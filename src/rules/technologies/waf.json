@@ -1,0 +1,81 @@
+{
+  "Cloudflare WAF": {
+    "description": "Cloudflare Web Application Firewall.",
+    "website": "https://www.cloudflare.com/waf/",
+    "cats": [5],
+    "priority": 1,
+    "headers": { "CF-Ray": "", "Server": "cloudflare" },
+    "html": ["<title>Attention Required! \\| Cloudflare</title>",
+      "<title>Just a moment\\.\\.\\.</title>"
+    ]
+  },
+
+  "阿里云WAF (Alibaba Cloud WAF)": {
+    "description": "阿里云Web应用防火墙(WAF)。",
+    "website": "https://www.aliyun.com/product/waf",
+    "cats": [5],
+    "cookies": { "aliyungf_": "" },
+    "html": ["aliyun\\.com/captcha", "\\.aliyungf\\.com"],
+    "headers": { "X-WAF-UUID": "" }
+  },
+
+  "腾讯云WAF (Tencent Cloud WAF)": {
+    "description": "腾讯云Web应用防火墙(WAF)。",
+    "website": "https://cloud.tencent.com/product/waf",
+    "cats": [5],
+    "html": ["waf\\.tencent-cloud\\.com"]
+  },
+
+  "长亭雷池 (SafeLine WAF)": {
+    "description": "长亭科技雷池(SafeLine) Web应用防火墙。",
+    "website": "https://waf.chaitin.cn",
+    "cats": [5],
+    "headers": { "X-Chaitin-WAF": "" },
+    "cookies": { "safeline_": "" },
+    "html": ["Chaitin SafeLine"]
+  },
+
+  "安全狗 (SafeDog WAF)": {
+    "description": "安全狗Web应用防火墙。",
+    "website": "https://www.safedog.cn",
+    "cats": [5],
+    "headers": { "Server": "safedog" },
+    "cookies": { "safedog-flow-item": "" }
+  },
+
+  "ModSecurity": {
+    "description": "ModSecurity is an open-source web application firewall.",
+    "website": "https://modsecurity.org",
+    "cats": [5],
+    "headers": { "X-ModSecurity": "" }
+  },
+
+  "百度WAF (Baidu WAF)": {
+    "description": "百度Web应用防火墙。",
+    "website": "https://cloud.baidu.com/product/waf.html",
+    "cats": [5],
+    "html": ["waf\\.baidu\\.com"]
+  },
+
+  "华为云WAF (Huawei Cloud WAF)": {
+    "description": "华为云Web应用防火墙(WAF)。",
+    "website": "https://www.huaweicloud.com/product/waf.html",
+    "cats": [5],
+    "headers": { "HWWAF-*": "" }
+  },
+
+  "创宇盾 (KnownSec WAF)": {
+    "description": "知道创宇创宇盾Web应用防火墙。",
+    "website": "https://www.yunaq.com",
+    "cats": [5],
+    "headers": { "X-Powered-By-Anquanbao": "" },
+    "cookies": { "yunsuo_session": "" }
+  },
+
+  "悬镜WAF (Xuanjing WAF)": {
+    "description": "悬镜安全Web应用防火墙。",
+    "website": "https://www.xuanjing.cn",
+    "cats": [5],
+    "cookies": { "__xw_": "" }
+  }
+}

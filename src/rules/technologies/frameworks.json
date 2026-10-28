@@ -1,0 +1,443 @@
+{
+  "React": {
+    "description": "React is a JavaScript library for building user interfaces.",
+    "website": "https://react.dev",
+    "icon": "React.svg",
+    "cats": [2],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:facebook:react:*:*:*:*:*:*:*:*",
+    "js": { "React": "", "__REACT_DEVTOOLS_GLOBAL_HOOK__": "", "ReactDOM": "" },
+    "scriptSrc": ["react(?:\\.min)?\\.js", "react-dom(?:\\.min)?\\.js",
+      "react\\.production\\.min\\.js", "react-dom\\.production\\.min\\.js",
+      "@umd/react", "@react/"
+    ],
+    "html": ["data-reactroot", "data-react-checksum", "data-reactid"],
+    "dom": {
+      "rootElement": { "exists": ["#root", "#__next", "[data-reactroot]"] },
+      "devtoolHook": { "js": "__REACT_DEVTOOLS_GLOBAL_HOOK__" }
+    }
+  },
+
+  "Vue.js": {
+    "description": "Vue.js is a progressive JavaScript framework.",
+    "website": "https://vuejs.org",
+    "icon": "Vue.svg",
+    "cats": [2],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:vuejs:vue.js:*:*:*:*:*:*:*:*",
+    "js": { "Vue": "", "__VUE_DEVTOOLS_GLOBAL_HOOK__": "", "__VUE_OPTIONS_API__": "" },
+    "scriptSrc": ["vue(?:\\.min)?\\.js", "vue\\.runtime(?:\\.min)?\\.js", "vue\\.global\\.js", "vue\\.esm\\.browser\\.js", "@vue/"],
+    "html": ["v-cloak", "data-v-[a-f0-9]{8}"],
+    "css": ["data-v-"],
+    "dom": {
+      "rootElement": { "exists": ["#app", "[v-cloak]"] }
+    }
+  },
+
+  "Angular": {
+    "description": "Angular is a TypeScript-based web application framework.",
+    "website": "https://angular.io",
+    "icon": "Angular.svg",
+    "cats": [2],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:angular:angular:*:*:*:*:*:*:*:*",
+    "js": { "angular": "", "ng": "" },
+    "scriptSrc": ["angular(?:\\.min)?\\.js", "@angular/", "main\\.[a-f0-9]+\\.js", "runtime\\.[a-f0-9]+\\.js"],
+    "html": ["<app-root>", "ng-version=", "_ngcontent-", "ng-version=\"([\\d.]+)\"\\;version:\\1"],
+    "css": ["_ngcontent-", "_nghost-"],
+    "dom": {
+      "rootElement": { "exists": ["app-root", "[ng-app]"] },
+      "versionAttribute": { "attributes": { "ng-version": "[\\d.]+" } }
+    }
+  },
+
+  "Next.js": {
+    "description": "Next.js is a React framework for production.",
+    "website": "https://nextjs.org",
+    "icon": "Next.js.svg",
+    "cats": [2],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:nextjs:next.js:*:*:*:*:*:*:*:*",
+    "js": { "__NEXT_DATA__": "", "__NEXT_LOADED_PAGES__": "" },
+    "scriptSrc": ["/_next/static/", "/_next/static/chunks/", "/_next/static/css/", "buildManifest\\.js", "_next/static/"],
+    "html": ["<div[^>]*id=\"__next\"", "__next/static", "<script[^>]*__NEXT_DATA__"],
+    "headers": { "x-powered-by": "Next.js" },
+    "cookies": { "__nextjs_distinct_id": "", "__next-routers": "" },
+    "dom": {
+      "rootElement": { "exists": ["#__next", "#__next > div"] }
+    },
+    "implies": ["React", "Node.js"]
+  },
+
+  "Nuxt.js": {
+    "description": "Nuxt.js is a Vue.js framework.",
+    "website": "https://nuxt.com",
+    "icon": "Nuxt.svg",
+    "cats": [2],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:nuxtjs:nuxt.js:*:*:*:*:*:*:*:*",
+    "js": { "__NUXT__": "", "$nuxt": "" },
+    "scriptSrc": ["/_nuxt/", "nuxt\\.min\\.js"],
+    "html": ["<div[^>]*id=\"__nuxt\"", "__nuxt/"],
+    "dom": {
+      "rootElement": { "exists": ["#__nuxt", "#__layout"] }
+    },
+    "implies": ["Vue.js", "Node.js"]
+  },
+
+  "Svelte": {
+    "description": "Svelte is a radical new approach to building user interfaces.",
+    "website": "https://svelte.dev",
+    "icon": "Svelte.svg",
+    "cats": [2],
+    "priority": 3,
+    "cpe": "cpe:2.3:a:svelte:svelte:*:*:*:*:*:*:*:*",
+    "js": { "__svelte": "" },
+    "html": ["<[^>]+class=\"svelte-\"", "svelte-", "data-svelte"],
+    "scriptSrc": ["svelte\\.min\\.js"],
+    "dom": {
+      "rootElement": { "exists": ["#app", "[data-svelte]"] }
+    }
+  },
+
+  "ThinkPHP": {
+    "description": "ThinkPHP是一个免费开源的PHP开发框架。",
+    "website": "https://www.thinkphp.cn",
+    "icon": "ThinkPHP.svg",
+    "cats": [2],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:thinkphp:thinkphp:*:*:*:*:*:*:*:*",
+    "headers": { "X-Powered-By": "ThinkPHP" },
+    "cookies": { "PHPSESSID": "" },
+    "html": ["thinkphp", "ThinkPHP"],
+    "url": "/thinkphp",
+    "implies": ["PHP"]
+  },
+
+  "Laravel": {
+    "description": "Laravel is a PHP web application framework.",
+    "website": "https://laravel.com",
+    "icon": "Laravel.svg",
+    "cats": [2],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:laravel:laravel:*:*:*:*:*:*:*:*",
+    "cookies": { "laravel_session": "", "laravel_cookie_consent": "" },
+    "headers": { "X-Powered-By": "Laravel" },
+    "html": ["Laravel", "laravel"],
+    "implies": ["PHP"]
+  },
+
+  "Spring Boot": {
+    "description": "Spring Boot is a Java-based framework for building web applications.",
+    "website": "https://spring.io/projects/spring-boot",
+    "icon": "Spring.svg",
+    "cats": [2],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:pivotal_software:spring_boot:*:*:*:*:*:*:*:*",
+    "html": ["<h1>Whitelabel Error Page</h1>", "Spring Boot"],
+    "headers": { "X-Application-Context": "" },
+    "implies": ["Java"]
+  },
+
+  "Flask": {
+    "description": "Flask is a micro web framework for Python.",
+    "website": "https://flask.palletsprojects.com",
+    "icon": "Flask.svg",
+    "cats": [2],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:pallets:flask:*:*:*:*:*:*:*:*",
+    "headers": { "Server": "Werkzeug(?:/([\\d.]+))?\\;version:\\1" },
+    "html": ["Flask", "flask"],
+    "implies": ["Python"]
+  },
+
+  "Django": {
+    "description": "Django is a high-level Python web framework.",
+    "website": "https://www.djangoproject.com",
+    "icon": "Django.svg",
+    "cats": [2],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:djangoproject:django:*:*:*:*:*:*:*:*",
+    "cookies": { "csrftoken": "", "sessionid": "" },
+    "html": ["<meta[^>]+name=\"csrfmiddlewaretoken\"", "Django", "django"],
+    "implies": ["Python"]
+  },
+
+  "Gin": {
+    "description": "Gin is a HTTP web framework written in Go.",
+    "website": "https://gin-gonic.com",
+    "cats": [2],
+    "priority": 3,
+    "headers": { "X-Powered-By": "Gin" },
+    "implies": ["Go"]
+  },
+
+  "Express": {
+    "description": "Express.js is a minimal web application framework for Node.js.",
+    "website": "https://expressjs.com",
+    "icon": "Express.svg",
+    "cats": [2],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:expressjs:express:*:*:*:*:*:*:*:*",
+    "headers": { "X-Powered-By": "Express" },
+    "implies": ["Node.js"]
+  },
+
+  "Koa": {
+    "description": "Koa is a next-generation web framework for Node.js.",
+    "website": "https://koajs.com",
+    "cats": [2],
+    "priority": 3,
+    "headers": { "X-Powered-By": "Koa" },
+    "implies": ["Node.js"]
+  },
+
+  "Fastify": {
+    "description": "Fastify is a web framework with the lowest overhead.",
+    "website": "https://fastify.dev",
+    "cats": [2],
+    "priority": 3,
+    "headers": { "X-Powered-By": "fastify" },
+    "implies": ["Node.js"]
+  },
+
+  "FastAdmin": {
+    "description": "FastAdmin是一款基于ThinkPHP+Bootstrap的后台开发框架。",
+    "website": "https://www.fastadmin.net",
+    "cats": [2],
+    "priority": 3,
+    "html": ["fastadmin", "FastAdmin"],
+    "url": "/index.php\\?s=",
+    "implies": ["ThinkPHP", "Bootstrap"]
+  },
+
+  "CodeIgniter": {
+    "description": "CodeIgniter is an open-source software rapid development web framework.",
+    "website": "https://codeigniter.com",
+    "cats": [2],
+    "priority": 2,
+    "headers": { "X-Powered-By": "CodeIgniter" },
+    "cookies": { "ci_session": "" },
+    "implies": ["PHP"]
+  },
+
+  "CakePHP": {
+    "description": "CakePHP is an open-source web framework.",
+    "website": "https://cakephp.org",
+    "cats": [2],
+    "priority": 2,
+    "headers": { "x-powered-by": "CakePHP" },
+    "cookies": { "CakeCookie": "" },
+    "implies": ["PHP"]
+  },
+
+  "Yii": {
+    "description": "Yii is a fast, secure, and efficient PHP framework.",
+    "website": "https://www.yiiframework.com",
+    "cats": [2],
+    "priority": 2,
+    "cookies": { "PHPSESSID": "", "_csrf": "" },
+    "implies": ["PHP"]
+  },
+
+  "Symfony": {
+    "description": "Symfony is a PHP web application framework.",
+    "website": "https://symfony.com",
+    "cats": [2],
+    "priority": 2,
+    "headers": { "X-Powered-By": "Symfony" },
+    "cookies": { "SESSID": "" },
+    "implies": ["PHP"]
+  },
+
+  "Zend Framework": {
+    "description": "Zend Framework is an open-source PHP framework.",
+    "website": "https://framework.zend.com",
+    "cats": [2],
+    "priority": 3,
+    "headers": { "X-Powered-By": "Zend" },
+    "implies": ["PHP"]
+  },
+
+  "ASP.NET Core": {
+    "description": "ASP.NET Core is a cross-platform web framework.",
+    "website": "https://dotnet.microsoft.com/apps/aspnet",
+    "cats": [2],
+    "priority": 1,
+    "headers": { "X-Powered-By": "ASP.NET", "Server": "Kestrel" },
+    "cookies": { ".AspNetCore.Session": "", ".AspNetCore.Cookies": "" },
+    "url": "\\.cshtml",
+    "implies": [".NET"]
+  },
+
+  "Django REST Framework": {
+    "description": "Web APIs for Django.",
+    "website": "https://www.django-rest-framework.org",
+    "cats": [2],
+    "priority": 2,
+    "headers": { "x-toolbar": "Django" },
+    "url": "/api/",
+    "implies": ["Django"]
+  },
+
+  "FastAPI": {
+    "description": "FastAPI framework, high performance, easy to learn.",
+    "website": "https://fastapi.tiangolo.com",
+    "cats": [2],
+    "priority": 2,
+    "implies": ["Python"]
+  },
+
+  "Strapi": {
+    "description": "Strapi is the open-source headless CMS.",
+    "website": "https://strapi.io",
+    "cats": [2],
+    "priority": 3,
+    "headers": { "X-Powered-By": "Strapi" },
+    "implies": ["Node.js"]
+  },
+
+  "Astro": {
+    "description": "Astro is an all-in-one web framework for fast, content-driven sites.",
+    "website": "https://astro.build",
+    "icon": "Astro.svg",
+    "cats": [2],
+    "priority": 3,
+    "scriptSrc": ["_astro/"],
+    "html": ["astro/", "data-astro-cid-"],
+    "css": ["astro-"]
+  },
+
+  "Remix": {
+    "description": "Remix is a full stack web framework.",
+    "website": "https://remix.run",
+    "icon": "Remix.svg",
+    "cats": [2],
+    "priority": 3,
+    "scriptSrc": ["/build/", "remix"],
+    "html": ["__remixContext"]
+  },
+
+  "HTMX": {
+    "description": "HTMX allows you to access AJAX, CSS Transitions, WebSockets directly in HTML.",
+    "website": "https://htmx.org",
+    "icon": "HTMX.svg",
+    "cats": [2],
+    "priority": 3,
+    "js": { "htmx": "" },
+    "scriptSrc": ["htmx\\.min\\.js"],
+    "html": ["hx-get", "hx-post", "hx-swap"]
+  },
+
+  "Tailwind CSS": {
+    "description": "A utility-first CSS framework.",
+    "website": "https://tailwindcss.com",
+    "icon": "Tailwind.svg",
+    "cats": [13],
+    "priority": 1,
+    "html": ["tailwindcss", "tailwind"],
+    "css": ["\\.flex ", "\\.grid ", "\\.text-center", "\\.bg-", "\\.p-[0-9]"],
+    "headers": { "x-generator": "Tailwind CSS" }
+  },
+
+  "Bootstrap": {
+    "description": "The most popular HTML, CSS, and JavaScript framework.",
+    "website": "https://getbootstrap.com",
+    "icon": "Bootstrap.svg",
+    "cats": [13],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:getbootstrap:bootstrap:*:*:*:*:*:*:*:*",
+    "scriptSrc": ["bootstrap(?:\\.bundle)?(?:\\.min)?\\.js"],
+    "html": ["data-bs-toggle", "data-bs-target", "bootstrap"],
+    "css": ["\\.btn ", "\\.container", "\\.row ", "\\.col-", "\\.navbar"],
+    "dom": {
+      "bootstrapClasses": { "className": ["btn-", "container", "navbar-"] }
+    }
+  },
+
+  "Ant Design": {
+    "description": "A design system with values of Certainty, Meaning, Naturalness, and Growing.",
+    "website": "https://ant.design",
+    "icon": "Ant Design.svg",
+    "cats": [13],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:ant.design:ant_design:*:*:*:*:*:*:*:*",
+    "js": { "antd": "" },
+    "scriptSrc": ["antd\\.min\\.js"],
+    "css": ["\\.ant-"],
+    "dom": {
+      "antClasses": { "className": ["ant-"] }
+    }
+  },
+
+  "Element UI": {
+    "description": "A Vue.js 2.0 component library.",
+    "website": "https://element.eleme.io",
+    "icon": "Element UI.svg",
+    "cats": [13],
+    "priority": 2,
+    "scriptSrc": ["element-ui", "element\\.min\\.js"],
+    "css": ["\\.el-"],
+    "dom": {
+      "elementClasses": { "className": ["el-"] }
+    }
+  },
+
+  "Material UI": {
+    "description": "React components for faster and easier web development.",
+    "website": "https://mui.com",
+    "icon": "Material UI.svg",
+    "cats": [13],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:mui:material-ui:*:*:*:*:*:*:*:*",
+    "js": { "MUI": "" },
+    "scriptSrc": ["@mui/material", "material-ui"],
+    "css": ["\\.Mui-", "\\.mui-"]
+  },
+
+  "Vuetify": {
+    "description": "Vuetify is a Vue UI library with a Material Design.",
+    "website": "https://vuetifyjs.com",
+    "cats": [13],
+    "priority": 2,
+    "css": ["v-", "vuetify"],
+    "implies": ["Vue.js"]
+  },
+
+  "Quasar": {
+    "description": "Quasar is a Vue-based framework.",
+    "website": "https://quasar.dev",
+    "cats": [13],
+    "priority": 3,
+    "css": ["q-", "quasar-"],
+    "implies": ["Vue.js"]
+  },
+
+  "PrimeReact": {
+    "description": "PrimeReact is a UI component library for React.",
+    "website": "https://primereact.org",
+    "cats": [13],
+    "priority": 3,
+    "css": ["p-", "pi-"],
+    "implies": ["React"]
+  },
+
+  "Node.js": {
+    "description": "Node.js is a JavaScript runtime.",
+    "website": "https://nodejs.org",
+    "icon": "Node.js.svg",
+    "cats": [14],
+    "priority": 3,
+    "headers": { "x-powered-by": "Express" }
+  },
+
+  "ASP.NET": {
+    "description": "ASP.NET is an open-source web framework.",
+    "website": "https://dotnet.microsoft.com",
+    "icon": "ASP.NET.svg",
+    "cats": [15],
+    "priority": 2,
+    "headers": { "x-aspnet-version": "", "x-powered-by": "ASP.NET" },
+    "implies": ["Windows Server"]
+  }
+}

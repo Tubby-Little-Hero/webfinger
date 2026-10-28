@@ -1,0 +1,96 @@
+{
+  "Nginx": {
+    "description": "Nginx is an open-source web server and reverse proxy.",
+    "website": "https://nginx.org",
+    "icon": "Nginx.svg",
+    "cats": [3],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:nginx:nginx:*:*:*:*:*:*:*:*",
+    "headers": { "Server": "nginx(?:/([\\d.]+))?\\;version:\\1" }
+  },
+
+  "Apache": {
+    "description": "Apache HTTP Server is a free and open-source web server.",
+    "website": "https://httpd.apache.org",
+    "icon": "Apache.svg",
+    "cats": [3],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:apache:http_server:*:*:*:*:*:*:*:*",
+    "headers": { "Server": "Apache(?:/([\\d.]+))?\\;version:\\1" }
+  },
+
+  "OpenResty": {
+    "description": "OpenResty is a web platform based on Nginx and LuaJIT.",
+    "website": "https://openresty.org",
+    "icon": "OpenResty.svg",
+    "cats": [3],
+    "priority": 3,
+    "cpe": "cpe:2.3:a:openresty:openresty:*:*:*:*:*:*:*:*",
+    "headers": { "Server": "openresty(?:/([\\d.]+))?\\;version:\\1" }
+  },
+
+  "Tengine": {
+    "description": "Tengine is a web server originated by Taobao, based on Nginx.",
+    "website": "https://tengine.taobao.org",
+    "icon": "Tengine.svg",
+    "cats": [3],
+    "priority": 3,
+    "cpe": "cpe:2.3:a:alibaba:tengine:*:*:*:*:*:*:*:*",
+    "headers": { "Server": "Tengine(?:/([\\d.]+))?\\;version:\\1" },
+    "implies": ["Nginx"]
+  },
+
+  "IIS": {
+    "description": "Internet Information Services is a web server for Microsoft Windows.",
+    "website": "https://www.iis.net",
+    "icon": "IIS.svg",
+    "cats": [3],
+    "priority": 2,
+    "cpe": "cpe:2.3:a:microsoft:internet_information_services:*:*:*:*:*:*:*:*",
+    "headers": { "Server": "Microsoft-IIS(?:/([\\d.]+))?\\;version:\\1" },
+    "html": ["<link[^>]+iisstatic\\.com"],
+    "implies": ["Windows Server"]
+  },
+
+  "Caddy": {
+    "description": "Caddy is an open-source web server with automatic HTTPS.",
+    "website": "https://caddyserver.com",
+    "icon": "Caddy.svg",
+    "cats": [3],
+    "priority": 5,
+    "headers": { "Server": "Caddy" }
+  },
+
+  "LiteSpeed": {
+    "description": "LiteSpeed Web Server is a high-performance web server.",
+    "website": "https://www.litespeedtech.com",
+    "icon": "LiteSpeed.svg",
+    "cats": [3],
+    "priority": 4,
+    "cpe": "cpe:2.3:a:litespeedtech:litespeed_web_server:*:*:*:*:*:*:*:*",
+    "headers": { "Server": "LiteSpeed" },
+    "cookies": { "_lscache_vary": "" }
+  },
+
+  "Tomcat": {
+    "description": "Apache Tomcat is an open-source Java Servlet Container.",
+    "website": "https://tomcat.apache.org",
+    "icon": "Tomcat.svg",
+    "cats": [3],
+    "headers": { "Server": "Apache-Coyote", "X-Powered-By": "Servlet" },
+    "url": "/docs/config/",
+    "implies": ["Java"]
+  },
+
+  "宝塔面板 (BT Panel)": {
+    "description": "宝塔面板是一款服务器管理面板。",
+    "website": "https://www.bt.cn",
+    "icon": "BT.svg",
+    "cats": [3, 13],
+    "priority": 0,
+    "headers": { "Server": "(?:nginx|Apache).*Bt" },
+    "cookies": { "Bt-Panel": "", "Bt_*": "" },
+    "url": "/phpmyadmin",
+    "text": "宝塔面板"
+  }
+}

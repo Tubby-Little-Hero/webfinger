@@ -1,0 +1,146 @@
+{
+  "Font Awesome": {
+    "description": "Font Awesome is a font and icon toolkit.",
+    "website": "https://fontawesome.com",
+    "icon": "FontAwesome.svg",
+    "cats": [11],
+    "priority": 1,
+    "css": ["fa-", "fab ", "fas ", "far ", "fal ", "fa-"],
+    "scriptSrc": ["font-awesome", "fontawesome"]
+  },
+
+  "Bootstrap Icons": {
+    "description": "Bootstrap Icons is a library of open source icon fonts.",
+    "website": "https://icons.getbootstrap.com",
+    "cats": [11],
+    "css": ["bi-"]
+  },
+
+  "Material Icons": {
+    "description": "Material Icons are a set of icons for use with Google's Material Design.",
+    "website": "https://fonts.google.com/icons",
+    "cats": [11],
+    "css": ["material-icons"],
+    "scriptSrc": ["googleapis\\.com/fonts/icon"]
+  },
+
+  "Elegant Icons": {
+    "description": "Elegant Icons is a free icon pack.",
+    "website": "https://www.elegantthemes.com",
+    "cats": [11],
+    "css": ["ei-"]
+  },
+
+  "Ionicons": {
+    "description": "Ionicons is an open-source icon set.",
+    "website": "https://ionic.io/ionicons",
+    "cats": [11],
+    "css": ["icon ion-", "ionicons"]
+  },
+
+  "Heroicons": {
+    "description": "Heroicons is a set of free SVG icons.",
+    "website": "https://heroicons.com",
+    "cats": [11],
+    "html": ["heroicons"]
+  },
+
+  "Tabler Icons": {
+    "description": "Tabler Icons is a set of over 1400 free icons.",
+    "website": "https://tabler.io/icons",
+    "cats": [11],
+    "css": ["ti-"]
+  },
+
+  "Boxicons": {
+    "description": "Boxicons is a set of icons for web designers and developers.",
+    "website": "https://boxicons.com",
+    "cats": [11],
+    "css": ["bx-"]
+  },
+
+  "Feather Icons": {
+    "description": "Feather is a collection of simply beautiful open source icons.",
+    "website": "https://feathericons.com",
+    "cats": [11],
+    "js": { "feather": "" }
+  },
+
+  "Apex Icons": {
+    "description": "Apex Icons is a free icon library.",
+    "cats": [11],
+    "css": ["apx-"]
+  },
+
+  "Google Fonts": {
+    "description": "Google Fonts is a library of free licensed font families.",
+    "website": "https://fonts.google.com",
+    "cats": [11],
+    "html": ["fonts\\.googleapis\\.com", "fonts\\.gstatic\\.com"],
+    "scriptSrc": ["fonts\\.googleapis\\.com"]
+  },
+
+  "Font Squirrel": {
+    "description": "Font Squirrel is a free font generator.",
+    "cats": [11]
+  },
+
+  "Typekit": {
+    "description": "Typekit is an online font subscription service.",
+    "website": "https://typekit.com",
+    "cats": [11],
+    "scriptSrc": ["use\\.typekit\\.com"]
+  },
+
+  "CDN": {
+    "description": "Generic CDN detection via script src domains.",
+    "cats": [4],
+    "scriptSrc": [
+      "cdn\\.jsdelivr\\.net",
+      "cdnjs\\.cloudflare\\.com",
+      "cdn\\.jsdelivr\\.com",
+      "unpkg\\.com",
+      "cdn\\.unpkg\\.com",
+      "jsdelivr\\.net",
+      "bootcdn\\.cn",
+      "cdn\\.bootcdn\\.cn",
+      "staticfile\\.org",
+      "cdn\\.staticfile\\.org"
+    ]
+  },
+
+  "jsDelivr": {
+    "description": "jsDelivr is an open-source CDN for npm packages.",
+    "website": "https://www.jsdelivr.com",
+    "cats": [4],
+    "scriptSrc": ["cdn\\.jsdelivr\\.net", "cdn\\.jsdelivr\\.com"]
+  },
+
+  "UNPKG": {
+    "description": "unpkg is a fast global CDN for npm packages.",
+    "website": "https://unpkg.com",
+    "cats": [4],
+    "scriptSrc": ["unpkg\\.com", "cdn\\.unpkg\\.com"]
+  },
+
+  "cdnjs": {
+    "description": "cdnjs is a free and open-source CDN.",
+    "website": "https://cdnjs.com",
+    "cats": [4],
+    "scriptSrc": ["cdnjs\\.cloudflare\\.com"]
+  },
+
+  "BootCDN": {
+    "description": "BootCDN 是国内免费开源项目 CDN。",
+    "website": "https://www.bootcdn.cn",
+    "cats": [4],
+    "scriptSrc": ["cdn\\.bootcdn\\.cn"]
+  },
+
+  "Staticfile": {
+    "description": "Staticfile 是国内开源 CDN。",
+    "website": "https://staticfile.org",
+    "cats": [4],
+    "scriptSrc": ["cdn\\.staticfile\\.org", "staticfile\\.org"]
+  }
+}

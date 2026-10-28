@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx wxt *)",
+      "Bash(mv scripts/generate-icons.js scripts/generate-icons.cjs)",
+      "Bash(node scripts/generate-icons.cjs)",
+      "Bash(mkdir -p \"e:/毕设/src/public/icons\" && cp \"e:/毕设/public/icons/\"* \"e:/毕设/src/public/icons/\" && ls -la \"e:/毕设/src/public/icons/\")"
+    ],
+    "additionalDirectories": [
+      "e:\\毕设\\public\\icons"
+    ]
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "PHP": {
+    "description": "PHP is a popular general-purpose scripting language.",
+    "website": "https://www.php.net",
+    "icon": "PHP.svg",
+    "cats": [8],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:php:php:*:*:*:*:*:*:*:*",
+    "headers": { "X-Powered-By": "PHP(?:/([\\d.]+))?\\;version:\\1" },
+    "cookies": { "PHPSESSID": "" },
+    "url": "\\.php(?:$|\\?)",
+    "meta": { "generator": "PHP" }
+  },
+
+  "Java": {
+    "description": "Java is an object-oriented programming language.",
+    "website": "https://www.java.com",
+    "icon": "Java.svg",
+    "cats": [8],
+    "priority": 1,
+    "headers": { "X-Powered-By": "Servlet" },
+    "cookies": { "JSESSIONID": "" },
+    "url": "\\.jsp(?:$|\\?)|\\.do(?:$|\\?)|servlet/"
+  },
+
+  "Python": {
+    "description": "Python is an interpreted high-level programming language.",
+    "website": "https://www.python.org",
+    "icon": "Python.svg",
+    "cats": [8],
+    "priority": 1,
+    "headers": { "Server": "Python" }
+  },
+
+  "Node.js": {
+    "description": "Node.js is a JavaScript runtime built on Chrome's V8 engine.",
+    "website": "https://nodejs.org",
+    "icon": "Node.js.svg",
+    "cats": [8],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:nodejs:node.js:*:*:*:*:*:*:*:*",
+    "headers": { "X-Powered-By": "Express" }
+  },
+
+  "Go": {
+    "description": "Go is an open source programming language.",
+    "website": "https://go.dev",
+    "icon": "Go.svg",
+    "cats": [8],
+    "headers": { "Server": "Go" }
+  },
+
+  "Ruby": {
+    "description": "Ruby is a dynamic programming language.",
+    "website": "https://www.ruby-lang.org",
+    "icon": "Ruby.svg",
+    "cats": [8],
+    "headers": { "X-Powered-By": "Ruby" }
+  },
+
+  "ASP.NET": {
+    "description": "ASP.NET is a web application framework by Microsoft.",
+    "website": "https://dotnet.microsoft.com/apps/aspnet",
+    "icon": "ASP.NET.svg",
+    "cats": [8],
+    "priority": 1,
+    "headers": { "X-Powered-By": "ASP\\.NET", "X-AspNet-Version": "([\\d.]+)\\;version:\\1" },
+    "cookies": { "__RequestVerificationToken": "", "ASP.NET_SessionId": "" },
+    "url": "\\.aspx(?:$|\\?)",
+    "implies": ["IIS"]
+  },
+
+  "Ruby on Rails": {
+    "description": "Ruby on Rails is a server-side web application framework.",
+    "website": "https://rubyonrails.org",
+    "icon": "Rails.svg",
+    "cats": [8],
+    "headers": { "X-Powered-By": "Rails" },
+    "cookies": { "_session_id": "" },
+    "implies": ["Ruby"]
+  },
+
+  "MySQL": {
+    "description": "MySQL is an open-source relational database management system.",
+    "website": "https://www.mysql.com",
+    "icon": "MySQL.svg",
+    "cats": [9],
+    "priority": 1,
+    "cpe": "cpe:2.3:a:oracle:mysql:*:*:*:*:*:*:*:*"
+  },
+
+  "PostgreSQL": {
+    "description": "PostgreSQL is a powerful open-source relational database.",
+    "website": "https://www.postgresql.org",
+    "icon": "PostgreSQL.svg",
+    "cats": [9],
+    "cpe": "cpe:2.3:a:postgresql:postgresql:*:*:*:*:*:*:*:*"
+  },
+
+  "Redis": {
+    "description": "Redis is an in-memory data structure store.",
+    "website": "https://redis.io",
+    "icon": "Redis.svg",
+    "cats": [9, 12],
+    "priority": 2
+  },
+
+  "MongoDB": {
+    "description": "MongoDB is a document-oriented NoSQL database.",
+    "website": "https://www.mongodb.com",
+    "icon": "MongoDB.svg",
+    "cats": [9],
+    "priority": 2
+  },
+
+  "SQLite": {
+    "description": "SQLite is a C-language library that implements a small SQL database engine.",
+    "website": "https://www.sqlite.org",
+    "cats": [9],
+    "priority": 3
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "categories": {
+    "1":  { "id": 1,  "name": "CMS",                 "nameZh": "内容管理系统",   "icon": "package",   "priority": 1 },
+    "2":  { "id": 2,  "name": "Web Framework",        "nameZh": "Web框架",        "icon": "code",      "priority": 2 },
+    "3":  { "id": 3,  "name": "Web Server",           "nameZh": "Web服务器",      "icon": "server",    "priority": 3 },
+    "4":  { "id": 4,  "name": "CDN",                  "nameZh": "CDN/云平台",     "icon": "cloud",     "priority": 4 },
+    "5":  { "id": 5,  "name": "WAF / Security",       "nameZh": "WAF/安全防护",   "icon": "shield",    "priority": 5 },
+    "6":  { "id": 6,  "name": "Analytics",            "nameZh": "统计/分析",      "icon": "chart",     "priority": 6 },
+    "7":  { "id": 7,  "name": "JavaScript Library",   "nameZh": "JavaScript库",   "icon": "js",        "priority": 7 },
+    "8":  { "id": 8,  "name": "Programming Language", "nameZh": "编程语言",       "icon": "terminal",  "priority": 8 },
+    "9":  { "id": 9,  "name": "Database",             "nameZh": "数据库",         "icon": "database",  "priority": 9 },
+    "10": { "id": 10, "name": "UI Framework",         "nameZh": "UI框架/组件库",  "icon": "layout",    "priority": 10 },
+    "11": { "id": 11, "name": "Font/Script",          "nameZh": "字体/图标库",    "icon": "type",      "priority": 11 },
+    "12": { "id": 12, "name": "Cache",                "nameZh": "缓存/加速",      "icon": "zap",       "priority": 12 },
+    "13": { "id": 13, "name": "Dev Tool",             "nameZh": "开发者工具",     "icon": "tool",      "priority": 13 },
+    "14": { "id": 14, "name": "SSL/TLS",              "nameZh": "SSL/TLS证书",   "icon": "lock",      "priority": 14 },
+    "15": { "id": 15, "name": "Operating System",     "nameZh": "操作系统",       "icon": "monitor",   "priority": 15 },
+    "16": { "id": 16, "name": "Honeypot",             "nameZh": "蜜罐",           "icon": "alert",     "priority": 99 }
+  }
+}

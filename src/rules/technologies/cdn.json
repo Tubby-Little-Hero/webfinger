@@ -1,0 +1,92 @@
+{
+  "Cloudflare": {
+    "description": "Cloudflare is a CDN, DDoS mitigation, and DNS provider.",
+    "website": "https://www.cloudflare.com",
+    "icon": "Cloudflare.svg",
+    "cats": [4, 5],
+    "priority": 1,
+    "headers": {
+      "CF-Ray": "",
+      "CF-Cache-Status": "",
+      "Server": "cloudflare"
+    },
+    "cookies": { "__cf_bm": "", "__cfduid": "", "cf_clearance": "" }
+  },
+
+  "阿里云CDN (Alibaba Cloud CDN)": {
+    "description": "阿里云内容分发网络(CDN)。",
+    "website": "https://www.aliyun.com/product/cdn",
+    "icon": "AlibabaCloud.svg",
+    "cats": [4],
+    "headers": {
+      "X-Swift-CacheTime": "",
+      "X-Swift-SaveTime": "",
+      "X-Cache": "HIT from",
+      "Server": "Tengine",
+      "Ali-Swift-Global-Savetime": ""
+    },
+    "implies": ["Tengine"]
+  },
+
+  "腾讯云CDN (Tencent Cloud CDN)": {
+    "description": "腾讯云内容分发网络(CDN)。",
+    "website": "https://cloud.tencent.com/product/cdn",
+    "icon": "TencentCloud.svg",
+    "cats": [4],
+    "headers": {
+      "X-Cache-Lookup": "",
+      "Server": "tencent-cos",
+      "x-cos-request-id": ""
+    }
+  },
+
+  "百度云加速 (Baidu Cloud CDN)": {
+    "description": "百度云加速CDN和安全防护。",
+    "website": "https://cloud.baidu.com/product/cdn.html",
+    "icon": "BaiduCloud.svg",
+    "cats": [4, 5],
+    "headers": { "Server": "yunjiasu-nginx" }
+  },
+
+  "七牛云CDN (Qiniu CDN)": {
+    "description": "七牛云CDN加速服务。",
+    "website": "https://www.qiniu.com/products/qcdn",
+    "cats": [4],
+    "scriptSrc": ["qiniucdn\\.com", "clouddn\\.com"],
+    "url": "qiniucdn\\.com"
+  },
+
+  "又拍云 (Upyun)": {
+    "description": "又拍云CDN加速和云存储服务。",
+    "website": "https://www.upyun.com",
+    "cats": [4],
+    "scriptSrc": ["upyun\\.com", "upaiyun\\.com"],
+    "headers": { "X-Upyun-*": "" }
+  },
+
+  "Fastly": {
+    "description": "Fastly is a content delivery network.",
+    "website": "https://www.fastly.com",
+    "icon": "Fastly.svg",
+    "cats": [4],
+    "headers": { "X-Served-By": "", "Fastly-Ip": "" }
+  },
+
+  "Akamai": {
+    "description": "Akamai is a global content delivery network.",
+    "website": "https://www.akamai.com",
+    "icon": "Akamai.svg",
+    "cats": [4],
+    "priority": 1,
+    "headers": { "X-Akamai-Transformed": "", "X-Akamai-Request-Id": "" },
+    "scriptSrc": ["akamaihd\\.net", "akamaized\\.net"]
+  },
+
+  "Vercel": {
+    "description": "Vercel is a cloud platform for static and serverless deployment.",
+    "website": "https://vercel.com",
+    "icon": "Vercel.svg",
+    "cats": [4],
+    "headers": { "X-Vercel-Id": "", "Server": "Vercel" }
+  }
+}
